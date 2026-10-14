@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حركة الرمح الآشوري الوطنية | RANM</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #14294d;
+  background-image: url("تصميم%20بدون%20عنوان.png");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  width: min(92%, 760px);
+  margin: auto;
+  padding: 65px 0;
+  text-align: center;
+}
+
+.logo-placeholder {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 24px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+}
+
+.welcome {
+  font-family: serif;
+  font-size: clamp(25px, 5vw, 36px);
+  font-weight: normal;
+  margin: 0 0 38px;
+  line-height: 1.8;
+}
+
+.glass {
+  width: 100%;
+  margin: 18px 0;
+  padding: 22px;
+  color: white;
+  text-align: right;
+  background: rgba(220, 230, 255, 0.10);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+.glass summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 21px;
+  text-align: center;
+  padding: 5px;
+}
+
+.glass summary::-webkit-details-marker {
+  display: none;
+}
+
+.glass summary::after {
+  content: "＋";
+  margin-right: 12px;
+  opacity: 0.8;
+}
+
+.glass[open] summary::after {
+  content: "−";
+}
+
+.content {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 18px;
+  padding-top: 18px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 65px;
+  padding: 25px 0;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 2;
+}
+</style>
+</head>
+
+<body>
+<main>
+
+  <div class="logo-placeholder">
+    شعار الحركة
+  </div>
+
+  <h1 class="welcome">أهلاً بحامل الرسالة الآشورية</h1>
+
+  <details class="glass">
+    <summary>عهود الحركة</summary>
+    <div class="content">
+      سيُضاف نص عهود الحركة هنا.
+    </div>
+  </details>
+
+  <details class="glass">
+    <summary>الأسئلة الشائعة</summary>
+    <div class="content">
+      ستُضاف الأسئلة والأجوبة هنا.
+    </div>
+  </details>
+
+  <footer>
+  
+    <div>حركة الرمح الآشوري الوطنية</div>
+    <div>ثباتٌ على الهدف وفاءٌ للوطن</div>
+  </footer>
+
+</main>
+</body>
+</html>
