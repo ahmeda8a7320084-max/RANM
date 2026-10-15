@@ -5,16 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>حركة الرمح الآشوري الوطنية | RANM</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Noto Kufi Arabic', Arial, sans-serif;
   background-color: #14294d;
   background-image: url("تصميم%20بدون%20عنوان.png");
   background-position: center top;
@@ -25,31 +31,30 @@ body {
 main {
   width: min(92%, 760px);
   margin: auto;
-  padding: 65px 0;
+  padding: 55px 0 40px;
   text-align: center;
 }
 
-.logo-placeholder {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 24px;
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.65);
-  font-size: 14px;
+/* الشعار */
+.logo {
+  display: block;
+  width: 145px;
+  max-width: 45%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 25px;
 }
 
+/* الترحيب */
 .welcome {
-  font-family: serif;
-  font-size: clamp(25px, 5vw, 36px);
-  font-weight: normal;
-  margin: 0 0 38px;
-  line-height: 1.8;
+  font-family: 'Noto Kufi Arabic', Arial, sans-serif;
+  font-size: clamp(23px, 5vw, 34px);
+  font-weight: 400;
+  line-height: 1.9;
+  margin: 0 0 35px;
 }
 
+/* البطاقات الزجاجية */
 .glass {
   width: 100%;
   margin: 18px 0;
@@ -57,17 +62,18 @@ main {
   color: white;
   text-align: right;
   background: rgba(220, 230, 255, 0.10);
-  border: 1px solid rgba(255,255,255,0.22);
-  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
 }
 
 .glass summary {
   cursor: pointer;
   list-style: none;
-  font-size: 21px;
+  font-size: 19px;
+  font-weight: 500;
   text-align: center;
   padding: 5px;
 }
@@ -87,19 +93,59 @@ main {
 }
 
 .content {
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 18px;
   padding-top: 18px;
-  line-height: 2;
-  font-size: 16px;
+  line-height: 2.2;
+  font-size: 14px;
+  text-align: right;
 }
 
-footer {
-  margin-top: 65px;
-  padding: 25px 0;
+.content h3 {
   font-size: 16px;
-  opacity: 0.9;
+  font-weight: 600;
+  margin: 22px 0 8px;
+}
+
+.content p {
+  margin: 8px 0 14px;
+}
+
+.content ul {
+  padding-right: 22px;
+  margin: 8px 0 16px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.question {
+  margin: 18px 0;
+  padding: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.question summary {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
   line-height: 2;
+}
+
+.question .answer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 13px;
+  line-height: 2.2;
+}
+
+/* نهاية الصفحة الرئيسية */
+.home-end {
+  height: 25px;
 }
 </style>
 </head>
@@ -107,31 +153,125 @@ footer {
 <body>
 <main>
 
-  <div class="logo-placeholder">
-    شعار الحركة
-  </div>
+  <!-- شعار الحركة -->
+  <img
+    class="logo"
+    src="8D8CE0D2-B44D-49C3-8771-6FEBB8C91325E.png"
+    alt="شعار حركة الرمح الآشوري الوطنية"
+  >
 
+  <!-- عبارة الترحيب -->
   <h1 class="welcome">أهلاً بحامل الرسالة الآشورية</h1>
 
+  <!-- عهد الحركة -->
   <details class="glass">
-    <summary>عهود الحركة</summary>
+    <summary>عهد الحركة</summary>
+
     <div class="content">
-      سيُضاف نص عهود الحركة هنا.
+
+      <h3>أولاً: المبادئ العامة</h3>
+
+      <p><strong>الهوية والتراث:</strong>
+      الحفاظ على التاريخ العراقي والثقافة العراقية وتطويرهما كجزء أصيل من التنوع الوطني.</p>
+
+      <p><strong>السيادة الوطنية وهيبة مؤسسات الدولة:</strong>
+      الالتزام بسيادة القرار الحكومي الوطني ورفض جميع القرارات والتدخلات الخارجية، وصون كرامة الدولة وحكومتها ومؤسساتها التشريعية وغير التشريعية.</p>
+
+      <p><strong>العدالة وسيادة القانون:</strong>
+      تحقيق المساواة بين الجنسين والالتزام بالقانون دون تمييز جنسي أو عرقي أو قومي أو ديني أو مذهبي، وضمان تكافؤ الفرص الوظيفية للجميع بما يصب في النهوض بالحركة الوطنية.</p>
+
+      <p><strong>التنمية والنهوض:</strong>
+      العمل الجاد على مشاريع خدمية أو فكرية تنخرط تحت راية القانون العراقي، بما يصب في مصلحة الشعب والحركة.</p>
+
+      <p><strong>العمل الاجتماعي:</strong>
+      الإيمان بأن التغيير يتحقق بالعمل الاجتماعي الجاد بمشاركة جميع أطياف الشعب العراقي.</p>
+
+      <h3>ثانياً: الركائز الأساسية</h3>
+
+      <p><strong>السرية والخدمة والولاء:</strong>
+      حماية المعلومات الداخلية للحركة والحفاظ على سرية عمل الإدارة والولاء للوطن ولرؤية الحركة.</p>
+
+      <p><strong>النزاهة والشفافية:</strong>
+      إبعاد المصالح الشخصية عن الحركة وقراراتها، وعدم السماح للخصومات والعواطف بالتأثير في القرارات، والالتزام بالشفافية.</p>
+
+      <p><strong>النشر من قبل الأعضاء:</strong>
+      يجب على الأعضاء الانصياع للقانون العراقي واحترام حرية الرأي والمعتقد، وعدم استخدام المنشورات للتحريض على الكراهية أو مخالفة الدستور والقانون.</p>
+
+      <p>تُتخذ الإجراءات التنظيمية بحق من يخالف قواعد العضوية وفق نظام الحركة، وبما يتوافق مع القانون.</p>
+
+      <h3>ثالثاً: الرؤية</h3>
+
+      <ul>
+        <li>مجتمع عراقي وطني تسوده السيادة التامة في اتخاذ قراراته.</li>
+        <li>رفض التدخل الخارجي في شؤون الداخل العراقي ومصير الأمة العراقية.</li>
+        <li>احترام متبادل بين الحكومة وشعبها والثقة بالمؤسسات الوطنية.</li>
+        <li>إصلاح الفكر العراقي وتطوير الثقافة الوطنية ونبذ التفرقة الوطنية والقومية والدينية والمذهبية والعرقية.</li>
+        <li>بناء جيل جديد يكون ولاؤه الأول لجمهورية العراق وشعبها.</li>
+      </ul>
+
     </div>
   </details>
 
+  <!-- الأسئلة الشائعة -->
   <details class="glass">
     <summary>الأسئلة الشائعة</summary>
+
     <div class="content">
-      ستُضاف الأسئلة والأجوبة هنا.
+
+      <details class="question">
+        <summary>من هو المؤسس؟</summary>
+        <div class="answer">
+          مؤسس الحركة هو الرمح أحمد خالد، صاحب الفكرة الأولى وكاتب العهد الأول وباني هيكلة الحركة العامة.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>متى تأسست حركة الرمح؟</summary>
+        <div class="answer">
+          تأسست الحركة كفكرة في الثاني عشر من ديسمبر 2025، ثم تطورت لتصبح كياناً وحركة سياسية مستقلة. وتم تأسيسها واقعياً في الثاني من أغسطس 2026. وتستذكر الحركة الثاني من أغسطس من كل عام لتجديد عهد الانتماء للوطن والحركة.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>هل ستبقى الحركة إلكترونية؟</summary>
+        <div class="answer">
+          لا نصف حركتنا بأنها حركة إلكترونية؛ فتأسيسها واقعي، لكن لا وجود لها ميدانياً في الوقت الراهن. نستخدم العالم الإلكتروني للتوعية وتطوير الحركة، ونسعى مستقبلاً إلى إنشاء مكاتب ميدانية وفق القانون.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>ما سبب تأسيس الحركة؟</summary>
+        <div class="answer">
+          جاء تأسيس الحركة من الإيمان بحاجة الوطن إلى دعم أبنائه. نعمل على تطوير الوطن ودعمه، ومساندة جهود الإصلاح ومكافحة الفساد، وتعزيز سيادة مؤسسات الدولة. لسنا حركة ثورية معارضة؛ بل نسعى إلى التطوير والبناء والازدهار.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>ما موقف الحركة من التدخل الخارجي في شؤون العراق؟</summary>
+        <div class="answer">
+          يرمز القوس الموجود في شعارنا إلى حماية الرمح وصدّ ما يهدده. ونحن نرفض التدخلات الخارجية والولاءات التي تنتقص من استقلال القرار العراقي؛ فالقرار العراقي يخص شعب العراق.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>ما هو المذهب الاقتصادي للحركة؟</summary>
+        <div class="answer">
+          يُترك جوابه في الوقت الراهن.
+        </div>
+      </details>
+
+      <details class="question">
+        <summary>هل تحظى الحركة بدعم أو تمويل خارجي؟</summary>
+        <div class="answer">
+          كلا، نرفض التمويل الخارجي من الأحزاب والحركات والجهات خارج العراق. ويُفترض أن يكون تمويل الحركة من مصادر داخلية مشروعة وشفافة، مع الالتزام بالقوانين ذات الصلة.
+        </div>
+      </details>
+
     </div>
   </details>
 
-  <footer>
-  
-    <div>حركة الرمح الآشوري الوطنية</div>
-    <div>ثباتٌ على الهدف وفاءٌ للوطن</div>
-  </footer>
+  <!-- تنتهي هنا واجهة الصفحة الرئيسية فقط -->
+  <div class="home-end"></div>
 
 </main>
 </body>
